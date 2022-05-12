@@ -215,6 +215,8 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
+			<Item Name="cluster_ref_TPG361.ctl" Type="VI" URL="../TPG361/cluster_ref_TPG361.ctl"/>
+			<Item Name="format_tpg361_data.vi" Type="VI" URL="../TPG361/sub/format_tpg361_data.vi"/>
 			<Item Name="getinfo.vi" Type="VI" URL="../subvi_main/getinfo.vi"/>
 			<Item Name="getposition.vi" Type="VI" URL="../subvi_motor/getposition.vi"/>
 			<Item Name="Global 1.vi" Type="VI" URL="../subvi_main/Global 1.vi"/>
@@ -229,6 +231,7 @@
 			<Item Name="pr.vi" Type="VI" URL="../subvi_motor/pr.vi"/>
 			<Item Name="sanitize.vi" Type="VI" URL="../subvi_motor/sanitize.vi"/>
 			<Item Name="sanitize_io.vi" Type="VI" URL="../subvi_motor/sanitize_io.vi"/>
+			<Item Name="set_ref_clus_TPG361.vi" Type="VI" URL="../TPG361/sub/set_ref_clus_TPG361.vi"/>
 			<Item Name="setpositionabsolute.vi" Type="VI" URL="../subvi_motor/setpositionabsolute.vi"/>
 			<Item Name="setvelocity.vi" Type="VI" URL="../subvi_motor/setvelocity.vi"/>
 			<Item Name="thcd_get_ahy.vi" Type="VI" URL="../THCD_400/thcd_get_ahy.vi"/>
@@ -237,6 +240,9 @@
 			<Item Name="thcd_get_uom.vi" Type="VI" URL="../THCD_400/thcd_get_uom.vi"/>
 			<Item Name="to_steps.vi" Type="VI" URL="../subvi_motor/to_steps.vi"/>
 			<Item Name="to_turns.vi" Type="VI" URL="../subvi_motor/to_turns.vi"/>
+			<Item Name="tpg361_get_p.vi" Type="VI" URL="../TPG361/sub/tpg361_get_p.vi"/>
+			<Item Name="TPG361_Main.vi" Type="VI" URL="../TPG361/TPG361_Main.vi"/>
+			<Item Name="tpg361_visa_close.vi" Type="VI" URL="../TPG361/sub/tpg361_visa_close.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="main" Type="EXE">
