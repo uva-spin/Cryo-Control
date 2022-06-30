@@ -22,6 +22,9 @@
 		<Item Name="MaxiGauge" Type="Folder" URL="../MaxiGauge">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="MCC_ETC" Type="Folder" URL="../MCC_ETC">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="MKS670_He3" Type="Folder" URL="../MKS670_He3">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -29,6 +32,9 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="THCD_400" Type="Folder" URL="../THCD_400">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="TPG361" Type="Folder" URL="../TPG361">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
@@ -47,12 +53,21 @@
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital Size.vi"/>
+				<Item Name="Digital to Binary.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital to Binary.vi"/>
 				<Item Name="DTbl Analog to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Analog to Digital.vi"/>
 				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
 				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DTbl Digital to Binary U8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital to Binary U8.vi"/>
+				<Item Name="DTbl Digital to Binary U16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital to Binary U16.vi"/>
+				<Item Name="DTbl Digital to Binary U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital to Binary U32.vi"/>
 				<Item Name="DU64_U32AddWithOverflow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32AddWithOverflow.vi"/>
 				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
 				<Item Name="DWDT Analog to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Analog to Digital.vi"/>
+				<Item Name="DWDT Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital Size.vi"/>
+				<Item Name="DWDT Digital to Binary U8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital to Binary U8.vi"/>
+				<Item Name="DWDT Digital to Binary U16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital to Binary U16.vi"/>
+				<Item Name="DWDT Digital to Binary U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital to Binary U32.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
@@ -125,6 +140,7 @@
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="ULx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Task.llb/ULx Clear Task.vi"/>
+				<Item Name="ULx Convert 1D Digital Waveform.vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Miscellaneous.llb/ULx Convert 1D Digital Waveform.vi"/>
 				<Item Name="ULx Create 1D Digital  Waveform.vi" Type="VI" URL="/&lt;vilib&gt;/ULx/CreateWfm.llb/ULx Create 1D Digital  Waveform.vi"/>
 				<Item Name="ULx Create 1D Digital port Waveform (NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/CreateWfm.llb/ULx Create 1D Digital port Waveform (NSamp).vi"/>
 				<Item Name="ULx Create 1D Waveform (1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/CreateWfm.llb/ULx Create 1D Waveform (1Samp).vi"/>
@@ -202,6 +218,43 @@
 				<Item Name="ULx Timing (Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Timing.llb/ULx Timing (Sample Clock).vi"/>
 				<Item Name="ULx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Timing.llb/ULx Timing (Use Waveform).vi"/>
 				<Item Name="ULx Timing.vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Timing.llb/ULx Timing.vi"/>
+				<Item Name="ULx Write (Analog 1D DBL 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog 1D DBL 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog 1D DBL 1Chan NSamp).vi"/>
+				<Item Name="ULx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog 1D DBL NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog 1D Wfm NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Analog 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog 1D Wfm NChan NSamp).vi"/>
+				<Item Name="ULx Write (Analog 2D DBL NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog 2D DBL NChan NSamp).vi"/>
+				<Item Name="ULx Write (Analog Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog Wfm 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Analog Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Analog Wfm 1Chan NSamp).vi"/>
+				<Item Name="ULx Write (Composite 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Composite 1D Wfm NChan NSamp).vi"/>
+				<Item Name="ULx Write (Composite 2D  NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Composite 2D  NChan NSamp).vi"/>
+				<Item Name="ULx Write (Counter 1D Frequency NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Counter 1D Frequency NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Counter 1D Ticks NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Counter 1D Ticks NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Counter 1D Time NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Counter 1D Time NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Counter Frequency 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Counter Frequency 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Counter Ticks 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Counter Ticks 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Counter Time 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Counter Time 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital 1D Bool 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D Bool 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital 1D Bool NChan 1Samp 1Line).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D Bool NChan 1Samp 1Line).vi"/>
+				<Item Name="ULx Write (Digital 1D U8 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D U8 1Chan NSamp).vi"/>
+				<Item Name="ULx Write (Digital 1D U8 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D U8 NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital 1D U16 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D U16 1Chan NSamp).vi"/>
+				<Item Name="ULx Write (Digital 1D U16 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D U16 NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital 1D U32 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D U32 1Chan NSamp).vi"/>
+				<Item Name="ULx Write (Digital 1D U32 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D U32 NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D Wfm NChan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 1D Wfm NChan NSamp).vi"/>
+				<Item Name="ULx Write (Digital 2D Bool NChan 1Samp NLine).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 2D Bool NChan 1Samp NLine).vi"/>
+				<Item Name="ULx Write (Digital 2D U8 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 2D U8 NChan NSamp).vi"/>
+				<Item Name="ULx Write (Digital 2D U16 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 2D U16 NChan NSamp).vi"/>
+				<Item Name="ULx Write (Digital 2D U32 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital 2D U32 NChan NSamp).vi"/>
+				<Item Name="ULx Write (Digital Bool 1Line 1Point).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital Bool 1Line 1Point).vi"/>
+				<Item Name="ULx Write (Digital U8 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital U8 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital U16 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital U16 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital U32 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital U32 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital Wfm 1Chan 1Samp).vi"/>
+				<Item Name="ULx Write (Digital Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write (Digital Wfm 1Chan NSamp).vi"/>
+				<Item Name="ULx Write.vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Write.llb/ULx Write.vi"/>
 				<Item Name="ULx_LV.dll" Type="Document" URL="/&lt;vilib&gt;/ULx/ULx_LV.dll"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
@@ -215,8 +268,6 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
-			<Item Name="cluster_ref_TPG361.ctl" Type="VI" URL="../TPG361/cluster_ref_TPG361.ctl"/>
-			<Item Name="format_tpg361_data.vi" Type="VI" URL="../TPG361/sub/format_tpg361_data.vi"/>
 			<Item Name="getinfo.vi" Type="VI" URL="../subvi_main/getinfo.vi"/>
 			<Item Name="getposition.vi" Type="VI" URL="../subvi_motor/getposition.vi"/>
 			<Item Name="Global 1.vi" Type="VI" URL="../subvi_main/Global 1.vi"/>
@@ -231,7 +282,6 @@
 			<Item Name="pr.vi" Type="VI" URL="../subvi_motor/pr.vi"/>
 			<Item Name="sanitize.vi" Type="VI" URL="../subvi_motor/sanitize.vi"/>
 			<Item Name="sanitize_io.vi" Type="VI" URL="../subvi_motor/sanitize_io.vi"/>
-			<Item Name="set_ref_clus_TPG361.vi" Type="VI" URL="../TPG361/sub/set_ref_clus_TPG361.vi"/>
 			<Item Name="setpositionabsolute.vi" Type="VI" URL="../subvi_motor/setpositionabsolute.vi"/>
 			<Item Name="setvelocity.vi" Type="VI" URL="../subvi_motor/setvelocity.vi"/>
 			<Item Name="thcd_get_ahy.vi" Type="VI" URL="../THCD_400/thcd_get_ahy.vi"/>
@@ -240,9 +290,6 @@
 			<Item Name="thcd_get_uom.vi" Type="VI" URL="../THCD_400/thcd_get_uom.vi"/>
 			<Item Name="to_steps.vi" Type="VI" URL="../subvi_motor/to_steps.vi"/>
 			<Item Name="to_turns.vi" Type="VI" URL="../subvi_motor/to_turns.vi"/>
-			<Item Name="tpg361_get_p.vi" Type="VI" URL="../TPG361/sub/tpg361_get_p.vi"/>
-			<Item Name="TPG361_Main.vi" Type="VI" URL="../TPG361/TPG361_Main.vi"/>
-			<Item Name="tpg361_visa_close.vi" Type="VI" URL="../TPG361/sub/tpg361_visa_close.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="main" Type="EXE">
