@@ -17,8 +17,8 @@ Connection:  [Valve]-[Worm Drive]-[Potentiometer]-[Clutch]-[Motor]
 * Potentiometer (POT)
     * It rotates together with the valve (not the motor) at the same amount of turns.
     * It is read out by MCC USB-202 in the fridge valve control box.
-    * 0-50 valve turns = 0-5 V --- Correct?
-    * The mechanical limit of POT corresponds to 0-10 V --- Correct?
+    * 0-10 valve turns = 0-5 V.
+    * The mechanical limit of POT corresponds to 0-5 V.
     * The voltage origin (i.e. voltage for 0 turn) is calibrated by manually fully-closing the valve and reading the voltage.
 * Clutch
     * It works when the motor tries to go beyond the fully-close position (and also the fully-open position?).
