@@ -19,17 +19,43 @@
 		<Item Name="Fridge_Valve" Type="Folder" URL="../Fridge_Valve">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="GV_Bypass" Type="Folder" URL="../GV_Bypass">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="ITM10" Type="Folder" URL="../ITM10">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="LabJackT4" Type="Folder" URL="../LabJackT4">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="LabJackU3" Type="Folder" URL="../LabJackU3">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="LakeShore218" Type="Folder" URL="../LakeShore218">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="MagRetBypass" Type="Folder" URL="../MagRetBypass">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="MaxiGauge" Type="Folder" URL="../MaxiGauge">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="MCC_ETC" Type="Folder" URL="../MCC_ETC">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="MKS670_He3" Type="Folder"/>
+		<Item Name="MKS670" Type="Folder" URL="../MKS670">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="MKS946" Type="Folder" URL="../MKS946">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="RootsPumpLCW" Type="Folder" URL="../RootsPumpLCW">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="THCD_400" Type="Folder" URL="../THCD_400">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="THCD_401" Type="Folder" URL="../THCD_401">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="TPG361" Type="Folder" URL="../TPG361">
@@ -81,6 +107,7 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="LMH-LINX.lvlib" Type="Library" URL="/&lt;vilib&gt;/MakerHub/LINX/LMH-LINX.lvlib"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
@@ -109,11 +136,14 @@
 				<Item Name="Read From Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read From Spreadsheet File.vi"/>
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
 				<Item Name="Read Lines From File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File.vi"/>
+				<Item Name="Read.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/AI/vis/Read.vi"/>
+				<Item Name="Reset myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/VIs/Reset myRIO.vi"/>
 				<Item Name="Sampling Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sampling Mode.ctl"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Smart Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/AI/vis/Smart Open.vi"/>
 				<Item Name="Sound Data Format.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Data Format.ctl"/>
 				<Item Name="Sound File Close.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Close.vi"/>
 				<Item Name="Sound File Info (path).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Info (path).vi"/>
@@ -276,25 +306,29 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="cluster_ref_TPG361.ctl" Type="VI" URL="../TPG361/cluster_ref_TPG361.ctl"/>
-			<Item Name="ITM10_Global.vi" Type="VI" URL="../ITM10/ITM10_Global.vi"/>
-			<Item Name="LabJackU3_Global.vi" Type="VI" URL="../LabJackU3/LabJackU3_Global.vi"/>
-			<Item Name="LakeShore218_Global.vi" Type="VI" URL="../LakeShore218/LakeShore218_Global.vi"/>
+			<Item Name="labjackm" Type="VI" URL="labjackm">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="labjackm.dll" Type="Document" URL="labjackm.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="labjackud.dll" Type="Document" URL="labjackud.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="liblinxdevice.dll" Type="Document" URL="liblinxdevice.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="LJM_eReadNames.vi" Type="VI" URL="../../Done (Text File Generated)/LabVIEW_LJM/Functions/LJM_eReadNames.vi"/>
+			<Item Name="LJM_ErrorToString.vi" Type="VI" URL="../../Done (Text File Generated)/LabVIEW_LJM/Functions/LJM_ErrorToString.vi"/>
+			<Item Name="LJM_eWriteNames.vi" Type="VI" URL="../../Done (Text File Generated)/LabVIEW_LJM/Functions/LJM_eWriteNames.vi"/>
+			<Item Name="LJM_OpenS.vi" Type="VI" URL="../../Done (Text File Generated)/LabVIEW_LJM/Functions/LJM_OpenS.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
 			<Item Name="Magnet_PS_Global.vi" Type="VI" URL="../Magnet_PS/Magnet_PS_Global.vi"/>
-			<Item Name="MKS670_Global.vi" Type="VI" URL="../MKS670/MKS670_Global.vi"/>
-			<Item Name="RootsPumpLCW_Global.vi" Type="VI" URL="../RootsPumpLCW/RootsPumpLCW_Global.vi"/>
-			<Item Name="temperature_status_LabJackU3.ctl" Type="VI" URL="../LabJackU3/temperature_status_LabJackU3.ctl"/>
-			<Item Name="THCD_401_Global.vi" Type="VI" URL="../THCD_401/THCD_401_Global.vi"/>
 			<Item Name="thcd_get_ahy.vi" Type="VI" URL="../THCD_400/thcd_get_ahy.vi"/>
 			<Item Name="thcd_get_sp.vi" Type="VI" URL="../THCD_400/thcd_get_sp.vi"/>
 			<Item Name="thcd_get_spa.vi" Type="VI" URL="../THCD_400/thcd_get_spa.vi"/>
 			<Item Name="thcd_get_uom.vi" Type="VI" URL="../THCD_400/thcd_get_uom.vi"/>
-			<Item Name="TTM 3He Press to Temp ITS90.vi" Type="VI" URL="../Common/test/TTM 3He Press to Temp ITS90.vi"/>
-			<Item Name="TTM 3He Press to Temp.vi" Type="VI" URL="../Common/test/TTM 3He Press to Temp.vi"/>
-			<Item Name="TTM 4He Press to Temp ITS90.vi" Type="VI" URL="../Common/test/TTM 4He Press to Temp ITS90.vi"/>
-			<Item Name="TTM 4He Press to Temp.vi" Type="VI" URL="../Common/test/TTM 4He Press to Temp.vi"/>
-			<Item Name="ULx_LV.dll" Type="Document" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2019/vi.lib/ULx/ULx_LV.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="main" Type="EXE">
